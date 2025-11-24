@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Validation</title>
+</head>
+<body>
+    <fieldset><legend>This is srinivasa reddy</legend>
+
+        <a href="https://www.cricbuzz.com" style="color: #28a618;">Click here for Cricbuzz</a><br><br>
+
+        <label>First Name</label>
+        <input type="text" placeholder="First Name" id="A" required><br><br>
+
+        <label>Last Name</label>
+        <input type="text" placeholder="Last Name" id="B" required><br><br>
+
+        <input type="button" value="Submit" onclick="sinuu()">
+
+        <script>
+            function sinuu() {
+                var a = document.getElementById("A").value;
+                var b = document.getElementById("B").value;
+                var patternA = /^[A][a-z]{10}$/; 
+                var patternB = /^[A][a-z]{5}$/;  
+
+                
+                if (a.trim() === "") {
+                    alert("Please enter first name");
+                }
+                else if (!patternA.test(a)) {
+                    alert("First name must start with 'A' and contain 10 lowercase letters");
+                }
+                else if (b.trim() === "") {
+                    alert("Please enter last name");
+                }
+                else if (!patternB.test(b)) {
+                    alert("Last name must start with 'A' and contain 5 lowercase letters");
+                }
+                else {
+                    alert("Validation Successful!");
+                }
+            }
+        </script>
+
+    </fieldset>
+</body>
+</html>
