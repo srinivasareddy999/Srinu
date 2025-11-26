@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <fieldset style="margin: 100px; background-color: wheat;"><legend>Registration Form</legend>
+    <label for="" style="color: brown;">Username</label>
+    <input type="text" placeholder="Username" id="A" required><br><br>
+    <label for="" style="color: blueviolet;">Password</label>
+    <input type="text" placeholder="Password" id="B" required><br><br>
+    <label for="" style="color: chocolate;">Confirm Password</label>
+    <input type="text" placeholder="Confirm Password" id="C" required><br><br>
+    <label for="" style="color: cornflowerblue;">First Name</label>
+    <input type="text" placeholder="First Name" id="D" required><br><br>
+    <label for="" style="color: darkgreen;">Last Name</label>
+    <input type="text" placeholder="Last Name" id="E" required><br><br>
+    <label for="" style="color: darkorchid;">Address</label>
+    <textarea name="Address" id="F"></textarea><br><br>
+    <label for="" style="color: darkslategrey;" id="G">Country</label>
+    <select name="Country" id="">
+        <option value="" style="color: darkblue;">India</option>
+        <option value="" style="color: gainsboro;">USA</option>
+        <option value="" style="color: darkorange;">UK</option>
+        <option value="" style="color: darksalmon;">Canada</option>
+    </select><br><br>
+    <label for="" id="H">State</label>
+    <select name="State" id="">
+        <option value="" style="color: darkblue;">AP</option>
+        <option value="" style="color: gainsboro;">Texas</option>
+        <option value="" style="color: darkorange;">London</option>
+        <option value="" style="color: darksalmon;">Ottava</option>
+    </select><br><br>
+    <label for="" id="I">CIty</label>
+    <select name="City" id="">
+        <option value=""style="color: darksalmon;">Vizag</option>
+        <option value="" style="color: gainsboro;">Utexas</option>
+        <option value="" style="color: darkblue;">Bermingam</option>
+        <option value="" style="color: darksalmon;">Hawai</option>
+    </select><br><br>
+    <label for="Gender">Gender</label>&nbsp;&nbsp;
+    <label for="">Male</label>
+    <input type="radio" placeholder="Male" name="Gender" id="J">
+    <label for="">Female</label>
+    <input type="radio" placeholder="Female" name="Gender" id="K"><br><br>
+    <input type="button" value="submit" onclick="one()">
+    <input type="reset" value="reset" onclick="one()">
+    <script>
+        function one(){
+        var a=document.getElementById("A").value
+        var b=document.getElementById("B").value
+        var c=document.getElementById("C").value
+        var d=document.getElementById("D").value
+        var e=document.getElementById("E").value
+        var f=document.getElementById("F").value
+        var g=document.getElementById("G").value
+        var h=document.getElementById("H").value
+        var i=document.getElementById("I").value
+        var j=document.getElementById("J").value
+        var k=document.getElementById("K").value
+        if(a==="")
+    {
+        window.alert('please enter Username')
+    }
+    else if(b=="")
+    {
+        alert('Please enter the Password')
+    }
+     else if(c=="")
+    {
+        alert('Please enter the Confirm Password')
+    }
+     else if(d=="")
+    {
+        alert('Please enter the First Name')
+    }
+     else if(e=="")
+    {
+        alert('Please enter the Last Name')
+    }
+     else if(f=="")
+    {
+        alert('Please enter the Address')
+    }
+     else if(g=="")
+    {
+        alert('Please enter the Country')
+    }
+     else if(h=="")
+    {
+        alert('Please enter the State')
+    }
+     else if(i=="")
+    {
+        alert('Please enter the City')
+    }
+     else if(j=="")
+    {
+        alert('Please enter the Gender')
+    }
+}
+    </script>
+    </fieldset></center>
+    
+</body>
+</html>
